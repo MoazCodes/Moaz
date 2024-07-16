@@ -1,3 +1,6 @@
+*{
+  transition-duration: 0.3ms;
+}
 text-primary{
   color: teal !important;
 }
@@ -11,3 +14,57 @@ text-primary{
 .navbar-nav .nav-link:focus{
   color: teal;
 }
+
+header.intro{
+  height: 100vh;
+  
+  position: relative;
+
+}
+
+header.intro .back-ground-blender{
+  position: absolute;
+  opacity: 70%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
+header.intro .back-ground{
+  position: absolute;
+  background: url("../image/intro-bg.jpg") center ;  
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+ z-index: -1;
+}
+
+ul.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: large;
+}
+ul.navbar-nav .nav-item .nav-link.active,
+ul.navbar-nav .nav-item:hover .nav-link {
+  color: teal;
+}
+
+ul li a i {
+  color: white
+}
+
+ul li:hover a i{
+  color:blue;
+}
+
+header.intro .content {
+  flex-grow: 1;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
