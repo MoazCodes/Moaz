@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="intro d-flex flex-column  ">
+    <header class="intro d-flex flex-column">
       <div class="back-ground-blender bg-black"></div>
       <div class="back-ground"></div>
       <!-- nav bar -->
@@ -47,23 +47,23 @@
                 class="navbar-nav d-lg-flex justify-content-center column-gap-3 w-100"
               >
                 <li class="nav-item">
-                  <a href="#" class="nav-link   active">Home</a>
+                  <a href="#" class="nav-link active">Home</a>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link  ">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">What I Do</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link ">Resume</a>
+                  <a href="#" class="nav-link">What I Do</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">Portfolio</a>
+                  <a href="#" class="nav-link">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">Client</a>
+                  <a href="#" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">Contact</a>
+                  <a href="#" class="nav-link">Client</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -94,14 +94,70 @@
         </div>
       </nav>
 
-      <div class="content text-center ">
+      <div class="content text-center">
         <h2 class="fw-normal">Welcome</h2>
-        <h1  class="fw-semibold">I'm Moaz Mohamed</h1>
-        <h1  class="fw-semibold">I'm Software Developer</h1>
-        <h4  class="fw-light">based in Giza, Egypt</h4> 
-        <a href="#" class="btn btn-outline-success  btn-lg rounded-5  ps-4 pe-4">Hire Me</a>
+        <h1 class="fw-semibold">I'm Moaz Mohamed</h1>
+        <h1 class="fw-semibold">I'm Software Developer</h1>
+        <h4 class="fw-light">based in Giza, Egypt</h4>
+        <a
+          href="#"
+          class="btn btn-outline-success btn-lg m-4 rounded-5 ps-4 pe-4"
+          >Hire Me</a
+        >
+      </div>
+
+      <div class="arrow text-center">
+        <i class="fa fa-chevron-down fs-4"></i>
       </div>
     </header>
+
+    <section class="about bg-light w-100">
+      <div class="container">
+        <h2 class="text-center">Know Me More</h2>
+      </div>
+    </section>
+    <section class="services w-100">
+      <div class="container">
+        <h2 class="text-center">What I Do?</h2>
+      </div>
+    </section>
+    <section class="summary w-100">
+      <div class="container">
+        <h2 class="text-center">Resume</h2>
+      </div>
+    </section>
+    <section class="portfolio w-100">
+      <div class="container">
+        <h2 class="text-center">My Work</h2>
+      </div>
+    </section>
+    <section class="testimonial w-100">
+      <div class="container">
+        <h2 class="text-center">Client Speak</h2>
+      </div>
+    </section>
+    <section class="contact w-100">
+      <div class="container">
+        <h2 class="text-center">Get in Touch</h2>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <script>
+      // Save the scroll position in localStorage before the page unloads
+      window.addEventListener("beforeunload", function () {
+        localStorage.setItem("scrollPosition", window.scrollY);
+      });
+
+      // Restore the scroll position when the page loads
+      window.addEventListener("load", function () {
+        const scrollPosition = localStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+          window.scrollTo(0, parseInt(scrollPosition, 10));
+        }
+      });
+    </script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
