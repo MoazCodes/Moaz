@@ -1,13 +1,16 @@
 *{
   transition-duration: 0.3ms;
 }
-root{
+:root{
   --main-color:#20c997;
 }
-text-primary{
+.text-primary{
   color: var(--main-color) !important;
 }
 
+.text-secondary{
+  color:#4c4d4d;
+}
 .navbar-nav .nav-link.active{
   color: var(--main-color);
 }
@@ -103,7 +106,6 @@ section{
 
 
 section.about{
-  height: 100vh;
   overflow: auto;
 }
 
@@ -142,9 +144,16 @@ section .container > h2::after {
   
 }
 
+.about .text p{
+  color: #4c4d4d;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
 
+.about .numbers .number h4{
+  font-size : 4rem;
 
-
+}
 /* services */
 
 section.services .container > h2::before{
