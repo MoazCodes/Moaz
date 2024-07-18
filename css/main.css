@@ -12,9 +12,9 @@
   color:var(--main-color) !important;
 }
 
-.bg-primary{
+.bg-primary,
+.btn-prmary{
   background-color:var(--main-color) !important;
-
 }
 
 .btn-outline-primary,
