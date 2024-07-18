@@ -160,6 +160,14 @@ section.services .container > h2::before{
   content: "SERVICES";
 }
 
+
+section.services .container .icon {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #4c4d4d;
+}
 /* SUMMARY */
 
 section.summary .container > h2::before{
