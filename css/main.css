@@ -38,6 +38,7 @@
   color:var(--main-color) !important ;
 }
 
+/* header */
 header.intro{
   height: 100vh;
   
@@ -91,6 +92,26 @@ header.intro .content {
   color: white;
 
 }
+/* name */
+
+.name{
+  position: relative;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.name:after{
+  content: "|";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 4rem;
+  font-weight:  300;
+  animation: namechange 30s ease-in infinite alternate;
+  width: 100%;
+}
+
+
 
 /* arrow */
 
@@ -160,6 +181,9 @@ z-index: -1;
     font-size: 4rem;   
   }
 
+  .name{
+    padding-bottom: 200px;
+  }
   
  }
 
@@ -248,3 +272,230 @@ section.testimonial .container > h2::before{
 section.contact .container > h2::before{
   content: "CONTACT";
 }
+
+
+/* name keyframes */
+@keyframes namechange { 
+  0.000000% { 
+ content : " I| "; 
+ } 
+ 1.351351% { 
+ content : " I'| "; 
+ } 
+ 2.702703% { 
+ content : " I'm| "; 
+ } 
+ 4.054054% { 
+ content : " I'm | "; 
+ } 
+ 5.405406% { 
+ content : " I'm M| "; 
+ } 
+ 6.756757% { 
+ content : " I'm Mo| "; 
+ } 
+ 8.108109% { 
+ content : " I'm Moa| "; 
+ } 
+ 9.459460% { 
+ content : " I'm Moaz| "; 
+ } 
+ 10.810812% { 
+ content : " I'm Moaz | "; 
+ } 
+ 12.162164% { 
+ content : " I'm Moaz M| "; 
+ } 
+ 13.513515% { 
+ content : " I'm Moaz Mo| "; 
+ } 
+ 14.864867% { 
+ content : " I'm Moaz Moh| "; 
+ } 
+ 16.216219% { 
+ content : " I'm Moaz Moha| "; 
+ } 
+ 17.567570% { 
+ content : " I'm Moaz Moham| "; 
+ } 
+ 18.918921% { 
+ content : " I'm Moaz Mohame| "; 
+ } 
+ 20.270271% { 
+ content : " I'm Moaz Mohamed| "; 
+ } 
+ 21.621622% { 
+ content : " I'm Moaz Mohamed "; 
+ } 
+ 22.972973% { 
+ content : " I'm Moaz Mohamed| "; 
+ } 
+ 24.324324% { 
+ content : " I'm Moaz Mohamed| ";  
+ } 
+ 25.675674% { 
+ content : " I'm Moaz Mohamed ";  
+ } 
+ 27.027025% { 
+ content : " I'm Moaz Mohamed| ";  
+ } 
+ 28.378376% { 
+ content : " I'm Moaz Mohame| ";  
+ } 
+ 29.729727% { 
+ content : " I'm Moaz Moham| ";  
+ } 
+ 31.081078% { 
+ content : " I'm Moaz Moha| ";  
+ } 
+ 32.432430% { 
+ content : " I'm Moaz Moh| ";  
+ } 
+ 33.783783% { 
+ content : " I'm Moaz Mo| ";  
+ } 
+ 35.135136% { 
+ content : " I'm Moaz M| ";  
+ } 
+ 36.486488% { 
+ content : " I'm Moaz | ";  
+ } 
+ 37.837841% { 
+ content : " I'm Moaz| ";  
+ } 
+ 39.189194% { 
+ content : " I'm Moa| ";  
+ } 
+ 40.540546% { 
+ content : " I'm Mo| ";  
+ } 
+ 41.891899% { 
+ content : " I'm M| ";  
+ } 
+ 43.243252% { 
+ content : " I'm | ";  
+ } 
+ 44.594604% { 
+ content : " I'm| ";  
+ } 
+ 45.945957% { 
+ content : " I'| ";  
+ } 
+ 47.297310% { 
+ content : " I| ";  
+ } 
+ 48.648663% { 
+ content : " I| ";  
+ } 
+ 50.000015% { 
+ content : " I'| ";  
+ } 
+ 51.351368% { 
+ content : " I'm| ";  
+ } 
+ 52.702721% { 
+ content : " I'm | ";  
+ } 
+ 54.054073% { 
+ content : " I'm W| ";  
+ } 
+ 55.405426% { 
+ content : " I'm We| ";  
+ } 
+ 56.756779% { 
+ content : " I'm Web| ";  
+ } 
+ 58.108131% { 
+ content : " I'm Web | ";  
+ } 
+ 59.459484% { 
+ content : " I'm Web D| ";  
+ } 
+ 60.810837% { 
+ content : " I'm Web De| ";  
+ } 
+ 62.162189% { 
+ content : " I'm Web Dev| ";  
+ } 
+ 63.513542% { 
+ content : " I'm Web Deve| ";  
+ } 
+ 64.864891% { 
+ content : " I'm Web Devel| ";  
+ } 
+ 66.216240% { 
+ content : " I'm Web Develo| ";  
+ } 
+ 67.567589% { 
+ content : " I'm Web Develop| ";  
+ } 
+ 68.918938% { 
+ content : " I'm Web Develope| ";  
+ } 
+ 70.270287% { 
+ content : " I'm Web Developer| ";  
+ } 
+ 71.621635% { 
+ content : " I'm Web Developer ";  
+ } 
+ 72.972984% { 
+ content : " I'm Web Developer| ";  
+ } 
+ 74.324333% { 
+ content : " I'm Web Developer| ";  
+ } 
+ 75.675682% { 
+ content : " I'm Web Developer ";  
+ } 
+ 77.027031% { 
+ content : " I'm Web Developer| ";  
+ } 
+ 78.378380% { 
+ content : " I'm Web Develope| ";  
+ } 
+ 79.729729% { 
+ content : " I'm Web Develop| ";  
+ } 
+ 81.081078% { 
+ content : " I'm Web Develo| ";  
+ } 
+ 82.432426% { 
+ content : " I'm Web Devel| ";  
+ } 
+ 83.783775% { 
+ content : " I'm Web Deve| ";  
+ } 
+ 85.135124% { 
+ content : " I'm Web Dev| ";  
+ } 
+ 86.486473% { 
+ content : " I'm Web De| ";  
+ } 
+ 87.837822% { 
+ content : " I'm Web D| ";  
+ } 
+ 89.189171% { 
+ content : " I'm Web | ";  
+ } 
+ 90.540520% { 
+ content : " I'm Web| ";  
+ } 
+ 91.891869% { 
+ content : " I'm We| ";  
+ } 
+ 93.243217% { 
+ content : " I'm W| ";  
+ } 
+ 94.594566% { 
+ content : " I'm | ";  
+ } 
+ 95.945915% { 
+ content : " I'm| ";  
+ } 
+ 97.297264% { 
+ content : " I'| ";  
+ } 
+ 98.648613% { 
+ content : " I| ";  
+ } 
+ }
