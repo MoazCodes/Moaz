@@ -132,21 +132,48 @@ section .container > h2{
   position: relative;
   font-size: 2.5rem;
   z-index: 1;
+  text-align: center;
 }
 
 section .container > h2::before{
   content: "ABOUT ME";
   position: absolute;
+  width: 100%;
   left: 50%;
-  top: 0px;
-  font-size: 120px;
-  transform: translate(-50%,45px);
+  top: 50%;
+  font-size: 6rem;
+  transform: translate(-50%,-50%);
   color: #dee3e4;
 z-index: -1;
   line-height: 1.25;
   letter-spacing: 4px;
   width: 100%;
 }
+
+/* meduim */
+@media (max-width: 767.98px) { 
+  section .container > h2{
+    font-size: 1.5rem;
+   
+  }
+  section .container > h2::before{
+    font-size: 4rem;   
+  }
+
+  
+ }
+
+ /* small */
+ @media (max-width: 575.98px){
+  section .container > h2{
+    font-size: 2.5rem ;
+  }
+  
+  section .container > h2::before{
+    font-size: 3.4rem;
+   
+  }
+ }
 
 
 section .container > h2::after {
@@ -196,7 +223,6 @@ section.summary .container > h2::before{
 
 section.portfolio .container > h2::before{
   content: "PORTFOLIO";
-  font-size: 7rem;
 }
 #all{
   position: relative;
@@ -215,7 +241,6 @@ section.portfolio .container > h2::before{
 
 section.testimonial .container > h2::before{
   content: "TESTIMONIAL";
-  font-size: 6rem;
 }
 
 /* CONTACT */

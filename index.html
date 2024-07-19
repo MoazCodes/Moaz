@@ -521,6 +521,54 @@
           </li>
         </ul>
 
+        <div class="image-gallery pt-4">
+          <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="image col-lg-4 col-sm-6 mb-0">
+              <img
+                src="image/project-1.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+              <img
+                src="image/project-4.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+            </div>
+
+            <div class="image col-lg-4 col-sm-6">
+              <img
+                src="image/project-2.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+              <img
+                src="image/project-7.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+            </div>
+
+            <div class="image col-lg-4 col-sm-6 order-md-2">
+              <img
+                src="image/project-3.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+              <img
+                src="image/project-5.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+              <img
+                src="image/project-6.jpg"
+                alt=""
+                class="w-100 pt-3 rounded-3 rounded-start-3"
+              />
+            </div>
+          </div>
+        </div>
+
         <!-- IMAGES -->
       </div>
     </section>
@@ -652,6 +700,7 @@
       </div>
     </section>
 
+    <!-- contact -->
     <section class="contact bg-light">
       <div class="container">
         <h2 class="text-center">Get in Touch</h2>
@@ -660,9 +709,7 @@
       <div class="container">
         <div class="row">
           <form class="col-md-8" id="contact-form" method="post">
-            <h3 class="fw-normal text-uppercase ">
-              Send Us A Note
-            </h3>
+            <h3 class="fw-normal text-uppercase">Send Us A Note</h3>
             <div class="row g-4">
               <div class="col-xl-6">
                 <input
@@ -689,7 +736,7 @@
                 ></textarea>
               </div>
             </div>
-            <p class="text-center  mt-4 mb-0">
+            <p class="text-center mt-4 mb-0">
               <button
                 class="btn text-white bg-primary shadow-sm rounded-pill ps-4 pe-4 pt-2 pb-2"
                 type="submit"
@@ -700,7 +747,7 @@
             <div class="Toastify"></div>
           </form>
 
-          <div class="col-md-4 text-center mt-5  mt-md-0">
+          <div class="col-md-4 text-center mt-5 mt-md-0">
             <h2 class="fw-normal mb-sm-3 text-uppercase">Address</h2>
             <p class="mb-4">
               2nd Floor, Plot No.22,<br />
@@ -717,9 +764,7 @@
               >moazmohamed.ba@gmail.com
             </p>
             <h2 class="fw-normal mb-3 text-uppercase">Follow Me</h2>
-            <ul
-              class=" d-flex justify-content-center list-unstyled"
-            >
+            <ul class="d-flex justify-content-center list-unstyled">
               <li class="me-3">
                 <a href="http://www.dribbble.com" target="_blank"
                   ><i class="fab fa-dribbble text-black"></i
@@ -746,13 +791,16 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer class="bg-light mb-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center text-lg-start">
             <p class="mb-3 mb-lg-0">
-              Copyright © 2024 <a href="#home" class="fw-500 text-decoration-none text-primary">Moaz</a>. All
-              Rights Reserved.
+              Copyright © 2024
+              <a href="#home" class="fw-500 text-decoration-none text-primary"
+                >Moaz</a
+              >. All Rights Reserved.
             </p>
           </div>
           <div class="col-lg-6">
@@ -760,20 +808,12 @@
               class="nav nav-separator justify-content-center justify-content-lg-end"
             >
               <li class="nav-item">
-                <a
-                  class="nav-link text-black"
-                  
-                  href="#terms-policy"
+                <a class="nav-link text-black" href="#terms-policy"
                   >Terms &amp; Policy</a
                 >
               </li>
-              <li class="nav-item ">
-                <a
-                  class="nav-link text-black"
-                  
-                  href="#disclaimer"
-                  >Disclaimer</a
-                >
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#disclaimer">Disclaimer</a>
               </li>
             </ul>
           </div>
@@ -795,6 +835,7 @@
         }
       });
     </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
