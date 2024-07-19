@@ -5,38 +5,84 @@
   --main-color:#20c997 !important;
   --second:#4c4d4d !important;
 }
-.text-primary,
-.btn-outline-primary,
-.border-primary,
-.navbar-nav .nav-link.active{
-  color:var(--main-color) !important;
+
+/* start globals */
+/* Primary Color Text and Borders */
+.text-primary {
+  color: var(--main-color) !important;
 }
 
-.bg-primary,
-.btn-prmary{
-  background-color:var(--main-color) !important;
-}
-
-.btn-outline-primary,
 .border-primary {
   border-color: var(--main-color) !important;
 }
 
+.navbar-nav .nav-link.active {
+  color: var(--main-color) !important;
+}
+
+/* Button Styles */
+.bg-primary,
+.btn-primary {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  color: white;
+}
+
+.btn-outline-primary{
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  color: white;
+}
+
+/* Secondary Button and Border Styles */
 .btn-outline-secondary,
 .border-secondary {
   border-color: var(--second) !important;
 }
-.text-secondary{
-  color:#4c4d4d;
+
+.text-secondary {
+  color: var(--second);
 }
 
- .nav-link:hover,
- .nav-link:focus,
- .active,
- i:hover
-{
-  color:var(--main-color) !important ;
+/* Link Hover and Focus Styles */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--main-color) !important;
 }
+
+i:hover {
+  color: var(--main-color) !important;
+}
+
+/* Navbar Link Styles */
+ul.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: large;
+}
+
+ul.navbar-nav .nav-item .nav-link.active,
+ul.navbar-nav .nav-item:hover .nav-link {
+  color: var(--main-color);
+}
+
+/* Icon Styles */
+ul li a i {
+  color: white;
+}
+
+ul li:hover a i {
+  color: blue;
+}
+
+
+/* end globals */
+
 
 /* header */
 header.intro{
@@ -65,22 +111,6 @@ header.intro .back-ground{
  z-index: -2;
 }
 
-ul.navbar-nav .nav-item .nav-link {
-  color: white;
-  font-size: large;
-}
-ul.navbar-nav .nav-item .nav-link.active,
-ul.navbar-nav .nav-item:hover .nav-link {
-  color: var(--main-color) ;
-}
-
-ul li a i {
-  color: white
-}
-
-ul li:hover a i{
-  color:blue;
-}
 
 header.intro .content {
   flex-grow: 1;
@@ -107,7 +137,7 @@ header.intro .content {
   transform: translate(-50%,0);
   font-size: 4rem;
   font-weight:  300;
-  animation: namechange 30s ease-in infinite alternate;
+  animation: namechange 30s ease-in infinite;
   width: 100%;
 }
 
@@ -208,12 +238,12 @@ section .container > h2::after {
   transform: translateX(-50% );
   width: 100px;
   height: 2px; 
-  background-color: #20c997;
+  background-color: var(--main-color);
   
 }
 
 .about .text p{
-  color: #4c4d4d;
+  color: var(--second);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -234,7 +264,7 @@ section.services .container .icon {
   height: 70px;
   font-size: 30px;
   padding: 10px;
-  background-color: #4c4d4d;
+  background-color: var(--second);
 }
 /* SUMMARY */
 
@@ -277,225 +307,238 @@ section.contact .container > h2::before{
 /* name keyframes */
 @keyframes namechange { 
   0.000000% { 
- content : " I| "; 
- } 
- 1.351351% { 
- content : " I'| "; 
- } 
- 2.702703% { 
- content : " I'm| "; 
- } 
- 4.054054% { 
- content : " I'm | "; 
- } 
- 5.405406% { 
- content : " I'm M| "; 
- } 
- 6.756757% { 
- content : " I'm Mo| "; 
- } 
- 8.108109% { 
- content : " I'm Moa| "; 
- } 
- 9.459460% { 
- content : " I'm Moaz| "; 
- } 
- 10.810812% { 
- content : " I'm Moaz | "; 
- } 
- 12.162164% { 
- content : " I'm Moaz M| "; 
- } 
- 13.513515% { 
- content : " I'm Moaz Mo| "; 
- } 
- 14.864867% { 
- content : " I'm Moaz Moh| "; 
- } 
- 16.216219% { 
- content : " I'm Moaz Moha| "; 
- } 
- 17.567570% { 
- content : " I'm Moaz Moham| "; 
- } 
- 18.918921% { 
- content : " I'm Moaz Mohame| "; 
- } 
- 20.270271% { 
- content : " I'm Moaz Mohamed| "; 
- } 
- 21.621622% { 
- content : " I'm Moaz Mohamed "; 
- } 
- 22.972973% { 
- content : " I'm Moaz Mohamed| "; 
- } 
- 24.324324% { 
- content : " I'm Moaz Mohamed| ";  
- } 
- 25.675674% { 
- content : " I'm Moaz Mohamed ";  
- } 
- 27.027025% { 
- content : " I'm Moaz Mohamed| ";  
- } 
- 28.378376% { 
- content : " I'm Moaz Mohame| ";  
- } 
- 29.729727% { 
- content : " I'm Moaz Moham| ";  
- } 
- 31.081078% { 
- content : " I'm Moaz Moha| ";  
- } 
- 32.432430% { 
- content : " I'm Moaz Moh| ";  
- } 
- 33.783783% { 
- content : " I'm Moaz Mo| ";  
- } 
- 35.135136% { 
- content : " I'm Moaz M| ";  
- } 
- 36.486488% { 
- content : " I'm Moaz | ";  
- } 
- 37.837841% { 
- content : " I'm Moaz| ";  
- } 
- 39.189194% { 
- content : " I'm Moa| ";  
- } 
- 40.540546% { 
- content : " I'm Mo| ";  
- } 
- 41.891899% { 
- content : " I'm M| ";  
- } 
- 43.243252% { 
- content : " I'm | ";  
- } 
- 44.594604% { 
- content : " I'm| ";  
- } 
- 45.945957% { 
- content : " I'| ";  
- } 
- 47.297310% { 
- content : " I| ";  
- } 
- 48.648663% { 
- content : " I| ";  
- } 
- 50.000015% { 
- content : " I'| ";  
- } 
- 51.351368% { 
- content : " I'm| ";  
- } 
- 52.702721% { 
- content : " I'm | ";  
- } 
- 54.054073% { 
- content : " I'm W| ";  
- } 
- 55.405426% { 
- content : " I'm We| ";  
- } 
- 56.756779% { 
- content : " I'm Web| ";  
- } 
- 58.108131% { 
- content : " I'm Web | ";  
- } 
- 59.459484% { 
- content : " I'm Web D| ";  
- } 
- 60.810837% { 
- content : " I'm Web De| ";  
- } 
- 62.162189% { 
- content : " I'm Web Dev| ";  
- } 
- 63.513542% { 
- content : " I'm Web Deve| ";  
- } 
- 64.864891% { 
- content : " I'm Web Devel| ";  
- } 
- 66.216240% { 
- content : " I'm Web Develo| ";  
- } 
- 67.567589% { 
- content : " I'm Web Develop| ";  
- } 
- 68.918938% { 
- content : " I'm Web Develope| ";  
- } 
- 70.270287% { 
- content : " I'm Web Developer| ";  
- } 
- 71.621635% { 
- content : " I'm Web Developer ";  
- } 
- 72.972984% { 
- content : " I'm Web Developer| ";  
- } 
- 74.324333% { 
- content : " I'm Web Developer| ";  
- } 
- 75.675682% { 
- content : " I'm Web Developer ";  
- } 
- 77.027031% { 
- content : " I'm Web Developer| ";  
- } 
- 78.378380% { 
- content : " I'm Web Develope| ";  
- } 
- 79.729729% { 
- content : " I'm Web Develop| ";  
- } 
- 81.081078% { 
- content : " I'm Web Develo| ";  
- } 
- 82.432426% { 
- content : " I'm Web Devel| ";  
- } 
- 83.783775% { 
- content : " I'm Web Deve| ";  
- } 
- 85.135124% { 
- content : " I'm Web Dev| ";  
- } 
- 86.486473% { 
- content : " I'm Web De| ";  
- } 
- 87.837822% { 
- content : " I'm Web D| ";  
- } 
- 89.189171% { 
- content : " I'm Web | ";  
- } 
- 90.540520% { 
- content : " I'm Web| ";  
- } 
- 91.891869% { 
- content : " I'm We| ";  
- } 
- 93.243217% { 
- content : " I'm W| ";  
- } 
- 94.594566% { 
- content : " I'm | ";  
- } 
- 95.945915% { 
- content : " I'm| ";  
- } 
- 97.297264% { 
- content : " I'| ";  
- } 
- 98.648613% { 
- content : " I| ";  
- } 
+    content : " I| "; 
+    } 
+    1.282051% { 
+    content : " I'| "; 
+    } 
+    2.564103% { 
+    content : " I'm| "; 
+    } 
+    3.846154% { 
+    content : " I'm | "; 
+    } 
+    5.128205% { 
+    content : " I'm M| "; 
+    } 
+    6.410256% { 
+    content : " I'm Mo| "; 
+    } 
+    7.692307% { 
+    content : " I'm Moa| "; 
+    } 
+    8.974359% { 
+    content : " I'm Moaz| "; 
+    } 
+    10.256410% { 
+    content : " I'm Moaz | "; 
+    } 
+    11.538461% { 
+    content : " I'm Moaz M| "; 
+    } 
+    12.820512% { 
+    content : " I'm Moaz Mo| "; 
+    } 
+    14.102563% { 
+    content : " I'm Moaz Moh| "; 
+    } 
+    15.384614% { 
+    content : " I'm Moaz Moha| "; 
+    } 
+    16.666666% { 
+    content : " I'm Moaz Moham| "; 
+    } 
+    17.948717% { 
+    content : " I'm Moaz Mohame| "; 
+    } 
+    19.230768% { 
+    content : " I'm Moaz Mohamed| "; 
+    } 
+    20.512819% { 
+    content : " I'm Moaz Mohamed.| "; 
+    } 
+    21.794870% { 
+    content : " I'm Moaz Mohamed. "; 
+    } 
+    23.076921% { 
+    content : " I'm Moaz Mohamed.| "; 
+    } 
+    24.358973% { 
+    content : " I'm Moaz Mohamed.| ";  
+    } 
+    25.641024% { 
+    content : " I'm Moaz Mohamed. ";  
+    } 
+    26.923075% { 
+    content : " I'm Moaz Mohamed.| ";  
+    } 
+    28.205126% { 
+    content : " I'm Moaz Mohamed| ";  
+    } 
+    29.487177% { 
+    content : " I'm Moaz Mohame| ";  
+    } 
+    30.769228% { 
+    content : " I'm Moaz Moham| ";  
+    } 
+    32.051281% { 
+    content : " I'm Moaz Moha| ";  
+    } 
+    33.333332% { 
+    content : " I'm Moaz Moh| ";  
+    } 
+    34.615383% { 
+    content : " I'm Moaz Mo| ";  
+    } 
+    35.897434% { 
+    content : " I'm Moaz M| ";  
+    } 
+    37.179485% { 
+    content : " I'm Moaz | ";  
+    } 
+    38.461536% { 
+    content : " I'm Moaz| ";  
+    } 
+    39.743587% { 
+    content : " I'm Moa| ";  
+    } 
+    41.025639% { 
+    content : " I'm Mo| ";  
+    } 
+    42.307690% { 
+    content : " I'm M| ";  
+    } 
+    43.589741% { 
+    content : " I'm | ";  
+    } 
+    44.871792% { 
+    content : " I'm| ";  
+    } 
+    46.153843% { 
+    content : " I'| ";  
+    } 
+    47.435894% { 
+    content : " I| ";  
+    } 
+    48.717945% { 
+    content : " I| ";  
+    } 
+    49.999996% { 
+    content : " I'| ";  
+    } 
+    51.282047% { 
+    content : " I'm| ";  
+    } 
+    52.564098% { 
+    content : " I'm | ";  
+    } 
+    53.846149% { 
+    content : " I'm W| ";  
+    } 
+    55.128201% { 
+    content : " I'm We| ";  
+    } 
+    56.410252% { 
+    content : " I'm Web| ";  
+    } 
+    57.692303% { 
+    content : " I'm Web | ";  
+    } 
+    58.974354% { 
+    content : " I'm Web D| ";  
+    } 
+    60.256405% { 
+    content : " I'm Web De| ";  
+    } 
+    61.538456% { 
+    content : " I'm Web Dev| ";  
+    } 
+    62.820507% { 
+    content : " I'm Web Deve| ";  
+    } 
+    64.102562% { 
+    content : " I'm Web Devel| ";  
+    } 
+    65.384613% { 
+    content : " I'm Web Develo| ";  
+    } 
+    66.666664% { 
+    content : " I'm Web Develop| ";  
+    } 
+    67.948715% { 
+    content : " I'm Web Develope| ";  
+    } 
+    69.230766% { 
+    content : " I'm Web Developer| ";  
+    } 
+    70.512817% { 
+    content : " I'm Web Developer.| ";  
+    } 
+    71.794868% { 
+    content : " I'm Web Developer. ";  
+    } 
+    73.076920% { 
+    content : " I'm Web Developer.| ";  
+    } 
+    74.358971% { 
+    content : " I'm Web Developer.| ";  
+    } 
+    75.641022% { 
+    content : " I'm Web Developer. ";  
+    } 
+    76.923073% { 
+    content : " I'm Web Developer.| ";  
+    } 
+    78.205124% { 
+    content : " I'm Web Developer| ";  
+    } 
+    79.487175% { 
+    content : " I'm Web Develope| ";  
+    } 
+    80.769226% { 
+    content : " I'm Web Develop| ";  
+    } 
+    82.051277% { 
+    content : " I'm Web Develo| ";  
+    } 
+    83.333328% { 
+    content : " I'm Web Devel| ";  
+    } 
+    84.615379% { 
+    content : " I'm Web Deve| ";  
+    } 
+    85.897430% { 
+    content : " I'm Web Dev| ";  
+    } 
+    87.179482% { 
+    content : " I'm Web De| ";  
+    } 
+    88.461533% { 
+    content : " I'm Web D| ";  
+    } 
+    89.743584% { 
+    content : " I'm Web | ";  
+    } 
+    91.025635% { 
+    content : " I'm Web| ";  
+    } 
+    92.307686% { 
+    content : " I'm We| ";  
+    } 
+    93.589737% { 
+    content : " I'm W| ";  
+    } 
+    94.871788% { 
+    content : " I'm | ";  
+    } 
+    96.153839% { 
+    content : " I'm| ";  
+    } 
+    97.435890% { 
+    content : " I'| ";  
+    } 
+    98.717941% { 
+    content : " I| ";  
+    } 
+   
  }
