@@ -32,7 +32,9 @@
 
  .nav-link:hover,
  .nav-link:focus,
- .active{
+ .active,
+ i:hover
+{
   color:var(--main-color) !important ;
 }
 
